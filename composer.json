@@ -1,0 +1,13 @@
+{
+    "name": "romainprignon/starter-php-component",
+    "description": "starter project for standard php component",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Romain Prignon",
+            "email": "pro.rprignon@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
