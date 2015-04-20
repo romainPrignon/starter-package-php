@@ -9,5 +9,19 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "scripts": {
+        "test": "phpunit tests/",
+        "format": "phpcsfixer",
+        "style": "phpcs src/",
+        "error": "parallel-lint src/",
+        "quality": "phpmd src/ && phpdepend phpcpd phpdcd",
+        "inspect": "xdebug",
+        "precommit": "composer run-script checkerror && composer run-script checkstyle && composer run-script test",
+        "installhooks": "cp scripts/git_hooks/pre-commit .git/hooks/pre-commit"
+    },
+    "require": {},
+    "require-dev": {
+        "jakub-onderka/php-parallel-lint": "0.8.*",
+        "phpunit/phpunit": "~4.6"
+    }
 }
