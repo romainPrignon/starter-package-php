@@ -1,4 +1,4 @@
-# starter-php-component
+# starter-php-component [![Build Status](https://travis-ci.org/romainPrignon/starter-php-component.svg?branch=master)](https://travis-ci.org/romainPrignon/starter-php-component)
 
 starter for php librarie
 

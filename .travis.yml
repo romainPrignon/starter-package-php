@@ -7,9 +7,15 @@ php:
   - 7.0
   - hhvm
 
+sudo: false
+
 env:
   global:
     - PATH=$PATH:./vendor/bin
+
+cache:
+  directories:
+    - vendor/
 
 matrix:
   allow_failures:
@@ -17,7 +23,7 @@ matrix:
     - php: 7.0
   fast_finish: true
 
-before_script:
+before_install:
   - composer self-update
 
 install:
