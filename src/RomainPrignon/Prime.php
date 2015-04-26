@@ -2,15 +2,26 @@
 
 namespace RomainPrignon;
 
+/**
+ * Prime
+ */
 class Prime
 {
     private $divisor;
 
+    /**
+     * @param int $divisor
+     */
     public function __construct($divisor)
     {
         $this->divisor = $divisor;
     }
 
+    /**
+     * @param int $n
+     *
+     * @return boolean
+     */
     public function isPrime($n)
     {
         $currentDivisor = $this->divisor;
@@ -26,6 +37,11 @@ class Prime
         return true;
     }
 
+    /**
+     * @param int $n
+     *
+     * @return array $factors
+     */
     public function primeFactors($n)
     {
         $factors = [];
