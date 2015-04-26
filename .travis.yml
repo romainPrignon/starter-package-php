@@ -23,7 +23,7 @@ matrix:
     - php: 7.0
   fast_finish: true
 
-before_script:
+before_install:
   - composer self-update
 
 install:
