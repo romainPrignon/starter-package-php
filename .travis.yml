@@ -7,9 +7,15 @@ php:
   - 7.0
   - hhvm
 
+sudo: false
+
 env:
   global:
     - PATH=$PATH:./vendor/bin
+
+cache:
+  directories:
+    - vendor/
 
 matrix:
   allow_failures:
