@@ -1,20 +1,23 @@
 <?php
 
+namespace RomainPrignon;
+
 class Prime
 {
-    $divisor;
+    private $divisor;
 
-    public function __construct(divisor){
-        $this->divisor = $divisor
+    public function __construct($divisor)
+    {
+        $this->divisor = $divisor;
     }
 
     public function isPrime($n)
     {
         $currentDivisor = $this->divisor;
 
-        while ($n>$currentDivisor){
+        while ($n > $currentDivisor) {
             if ($n % $currentDivisor === 0) {
-                return false
+                return false;
             } else {
                 $currentDivisor++;
             }
