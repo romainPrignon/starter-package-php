@@ -25,6 +25,7 @@
         "post-install-cmd":"phpcs --config-set installed_paths vendor/escapestudios/symfony2-coding-standard"
     },
     "require": {
+        "php": ">=5.4"
     },
     "require-dev": {
         "jakub-onderka/php-parallel-lint": "@stable",
