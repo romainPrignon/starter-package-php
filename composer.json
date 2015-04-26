@@ -14,8 +14,8 @@
     },
     "scripts": {
         "test": "phpunit",
-        "checkerror": "parallel-lint src/",
-        "inspect": "phpmd src/ text rulesets.xml",
+        "checkerror": "parallel-lint src/ tests/",
+        "inspect": "phpmd src/,tests/ text rulesets.xml",
         "checkstyle": "phpcs --standard=Symfony2 src/",
         "format": "php-cs-fixer fix --level=symfony src/",
         "coverage": "phpmetrics --report-html=coverage/phpmetrics.html src/",
