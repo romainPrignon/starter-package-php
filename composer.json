@@ -14,14 +14,13 @@
     },
     "scripts": {
         "test": "phpunit",
-        "checkerror": "parallel-lint src/ tests/",
-        "inspect": "phpmd src/,tests/ text rulesets.xml",
+        "checkerror": "parallel-lint src/ tests/ && phpmd src/,tests/ text rulesets.xml",
         "checkstyle": "phpcs --standard=Symfony2 src/",
         "format": "php-cs-fixer fix --level=symfony src/",
         "coverage": "phpmetrics --report-html=coverage/phpmetrics.html src/",
         "debug": "xdebug",
         "installhooks": "rm -rf .git/hooks/ && cp -a scripts/git_hooks/ .git/hooks/",
-        "precommit": "composer checkerror && composer inspect && composer checkstyle && composer test",
+        "precommit": "composer checkerror && composer format && composer checkstyle && composer test",
         "post-install-cmd":"./vendor/bin/phpcs --config-set installed_paths vendor/escapestudios/symfony2-coding-standard"
     },
     "require": {
