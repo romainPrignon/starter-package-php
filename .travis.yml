@@ -35,7 +35,6 @@ install:
 
 script:
   - composer checkerror
-  - composer inspect
   - composer checkstyle
   - composer test
 
