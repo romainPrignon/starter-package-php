@@ -23,6 +23,10 @@ matrix:
     - php: 7.0
   fast_finish: true
 
+addons:
+  code_climate:
+    repo_token: 1cd27cae6d0a6bfe2c5073768fc9842011013b773eba6a1d8c53896d20edd4c7
+
 before_install:
   - composer self-update
 
@@ -34,3 +38,7 @@ script:
   - composer inspect
   - composer checkstyle
   - composer test
+
+after_script:
+  - CODECLIMATE_REPO_TOKEN="1cd27cae6d0a6bfe2c5073768fc9842011013b773eba6a1d8c53896d20edd4c7" vendor/bin/test-reporter --stdout > codeclimate.json
+  - "curl -X POST -d @codeclimate.json -H 'Content-Type: application/json' -H 'User-Agent: Code Climate (PHP Test Reporter v0.1.1)' https://codeclimate.com/test_reports"
