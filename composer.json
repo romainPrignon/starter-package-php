@@ -34,6 +34,7 @@
         "squizlabs/php_codesniffer": "@stable",
         "escapestudios/symfony2-coding-standard": "@stable",
         "halleck45/phpmetrics": "@stable",
-        "fabpot/php-cs-fixer": "@stable"
+        "fabpot/php-cs-fixer": "@stable",
+        "codeclimate/php-test-reporter": "@stable"
     }
 }

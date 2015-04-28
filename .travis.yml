@@ -23,6 +23,10 @@ matrix:
     - php: 7.0
   fast_finish: true
 
+addons:
+  code_climate:
+    repo_token: 1cd27cae6d0a6bfe2c5073768fc9842011013b773eba6a1d8c53896d20edd4c7
+
 before_install:
   - composer self-update
 
@@ -34,3 +38,6 @@ script:
   - composer inspect
   - composer checkstyle
   - composer test
+
+after_script:
+  - vendor/bin/test-reporter
