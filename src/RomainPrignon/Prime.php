@@ -12,25 +12,24 @@ class Prime
     /**
      * @param int $divisor
      */
-    public function __construct($divisor)
-    {
-        $this->divisor = $divisor;
+    public function __construct($divisor){
+      $this->divisor = $divisor;
     }
 
     /**
      * @param int $n
      *
-     * @return boolean
      */
     public function isPrime($n)
     {
+        $unused = 1;
         $currentDivisor = $this->divisor;
 
         while ($n > $currentDivisor) {
             if ($n % $currentDivisor === 0) {
                 return false;
             } else {
-                $currentDivisor++;
+                $currentDivisor++
             }
         }
 
