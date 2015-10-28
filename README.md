@@ -1,12 +1,12 @@
-# starter-php-component [![Build Status](https://travis-ci.org/romainPrignon/starter-php-component.svg?branch=master)](https://travis-ci.org/romainPrignon/starter-php-component)
+# starter-package-php [![Build Status](https://travis-ci.org/romainPrignon/starter-package-php.svg?branch=master)](https://travis-ci.org/romainPrignon/starter-package-php)
 
 starter for php librarie
 
 ## Installation
 
 ```sh
-git clone https://github.com/romainprignon/starter-php-component.git
-cd starter-php-component
+git clone https://github.com/romainprignon/starter-package-php.git
+cd starter-package-php
 rm -rf .git
 git init
 git remote add origin <repo_url>
