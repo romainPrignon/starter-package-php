@@ -20,7 +20,7 @@
         "format": "php-cs-fixer fix --level=symfony src/",
         "coverage": "phpmetrics --report-html=coverage/phpmetrics.html src/",
         "debug": "xdebug",
-        "installhooks": "rm -rf .git/hooks/ && cp -a scripts/git_hooks/ .git/hooks/",
+        "installhooks": "rm -rf .git/hooks/ && cp -a scripts/git_hooks/ .git/hooks/ && chmod a+x .git/hooks/*",
         "precommit": "composer checkerror && composer format && composer checkstyle && composer test",
         "post-install-cmd":"./vendor/bin/phpcs --config-set installed_paths vendor/escapestudios/symfony2-coding-standard"
     },
