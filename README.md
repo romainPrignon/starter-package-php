@@ -2,7 +2,7 @@
 
 starter for php librarie
 
-## Installation
+## Using this repository as a starting point
 
 ```sh
 git clone https://github.com/romainprignon/starter-package-php.git
@@ -10,30 +10,42 @@ cd starter-package-php
 rm -rf .git
 git init
 git remote add origin <repo_url>
-composer run-script installhooks
+composer run installhooks
 composer install
 ```
 time for coffee... :)
 
-## Usage
-
-Acme me
-
-
-## Test
+## Installation
 
 ```sh
-composer run-script test
+composer require --prefer-source git://github.com/romainprignon/starter-package-php.git
 ```
 
-## Debug
+## Usage
 
+### Test
 
+```sh
+composer run test
+```
 
-## Documentation
+### Release
+
+```sh
+composer run release
+```
+
+### Documentation
 
 Take a look at the [documentation table of contents](doc/TOC.md).
 
-## License
+### License
 
 The code is available under the [MIT license](LICENSE.md).
+
+## Todo
+* [ ] debugging
+* [ ] watching
+* [ ] using phpcbf (optionnal)
+* [ ] release (changelog, ...)
+* [ ] github release (optionnal)

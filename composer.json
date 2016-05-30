@@ -1,6 +1,7 @@
 {
     "name": "romainprignon/starter-package-php",
     "description": "starter project for standard php component",
+    "version": "0.1.0",
     "license": "MIT",
     "authors": [
         {

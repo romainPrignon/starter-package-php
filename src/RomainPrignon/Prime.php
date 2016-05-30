@@ -3,7 +3,7 @@
 namespace RomainPrignon;
 
 /**
- * Prime
+ * Prime.
  */
 class Prime
 {
@@ -20,7 +20,7 @@ class Prime
     /**
      * @param int $n
      *
-     * @return boolean
+     * @return bool
      */
     public function isPrime($n)
     {

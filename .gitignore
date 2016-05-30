@@ -1,2 +1,5 @@
-/vendor/
+vendor/
 .idea/
+coverage/
+
+.DS_STORE
