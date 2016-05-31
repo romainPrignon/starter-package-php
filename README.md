@@ -17,8 +17,18 @@ time for coffee... :)
 
 ## Installation
 
+add in composer.json (optionally use ssh)
+```json
+"repositories": [
+    {
+        "type": "vcs",
+        "url":  "https://github.com/romainPrignon/starter-package-php.git"
+    }
+]
+```
+
 ```sh
-composer require --prefer-source git://github.com/romainprignon/starter-package-php.git
+composer require --prefer-source starter-package-php
 ```
 
 ## Usage
