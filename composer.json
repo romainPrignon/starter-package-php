@@ -28,13 +28,14 @@
         "php": ">=5.4"
     },
     "require-dev": {
+        "hirak/prestissimo": "@stable",
         "jakub-onderka/php-parallel-lint": "@stable",
         "phpunit/phpunit": "@stable",
         "phpmd/phpmd": "@stable",
         "squizlabs/php_codesniffer": "@stable",
         "escapestudios/symfony2-coding-standard": "@stable",
-        "halleck45/phpmetrics": "@stable",
-        "fabpot/php-cs-fixer": "@stable",
+        "phpmetrics/phpmetrics": "@stable",
+        "friendsofphp/php-cs-fixer": "@stable",
         "codeclimate/php-test-reporter": "@stable"
     }
 }
