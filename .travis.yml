@@ -25,9 +25,9 @@ install:
   - composer install
 
 script:
-  - composer checkerror
-  - composer checkstyle
-  - composer test
+  - make checkerror
+  - make checkstyle
+  - make test
 
 after_script:
   - CODECLIMATE_REPO_TOKEN="1cd27cae6d0a6bfe2c5073768fc9842011013b773eba6a1d8c53896d20edd4c7" vendor/bin/test-reporter --stdout > codeclimate.json
