@@ -9,9 +9,9 @@ env:
   global:
     - PATH=$PATH:./vendor/bin
 
-cache:
-  directories:
-    - vendor/
+# cache:
+#   directories:
+#     - vendor/
 
 addons:
   code_climate:
