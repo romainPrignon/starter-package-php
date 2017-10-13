@@ -1,5 +1,8 @@
 vendor/
 .idea/
 coverage/
+report/
 
 .DS_STORE
+composer.lock
+.php_cs.cache

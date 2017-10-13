@@ -36,13 +36,21 @@ composer require --prefer-source starter-package-php
 ### Test
 
 ```sh
-composer run test
+make test
+```
+
+### Debug
+
+* phpstorm > PHP remote debug
+
+```sh
+make test
 ```
 
 ### Release
 
 ```sh
-composer run release
+make release
 ```
 
 ### Documentation
@@ -54,8 +62,6 @@ Take a look at the [documentation table of contents](doc/TOC.md).
 The code is available under the [MIT license](LICENSE.md).
 
 ## Todo
-* [ ] debugging
 * [ ] watching
-* [ ] using phpcbf (optionnal)
 * [ ] release (changelog, ...)
 * [ ] github release (optionnal)

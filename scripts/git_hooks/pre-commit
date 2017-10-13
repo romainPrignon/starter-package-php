@@ -1,3 +1,5 @@
 #!/bin/sh
 
-composer run-script precommit
+make checkerror
+make format
+make checkstyle
